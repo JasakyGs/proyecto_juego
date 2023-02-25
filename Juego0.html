@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <script defer src="./Juego1.js"></script>
+    <style>
+        body {
+          background: rgb(94,114,32);
+          background: radial-gradient(circle, rgba(94,114,32,1) 0%, rgba(40,115,202,1) 100%);
+        }
+      </style>
+</head>
+<body>
+    <h1 style="text-align: center;">PREPARATE PARA JUGAR PIEDRA, PAPEL O TIGERAS</h1> <br>
+
+	<h2></2h><p style="text-align: center;">Presiona Jugar para comenzar</p></h2><br>
+
+<div style=" text-align: center;">
+
+    <button id = "boton1" style="background: linear-gradient(to bottom right, #47d7c9, #6c0a75); color: white; font-size: 30px; border: 2px solid black;">Jugar 🎮</button> <br> <br>
+    <button id = "boton2" style="background: linear-gradient(to bottom right, #47d7c9, #6c0a75); color: white; font-size: 30px; border: 2px solid black;">Piedra 🗿</button> 
+    <button id = "boton3" style="background: linear-gradient(to bottom right, #47d7c9, #6c0a75); color: white; font-size: 30px; border: 2px solid black;">Papel 📜</button> 
+    <button id = "boton4" style="background: linear-gradient(to bottom right, #47d7c9, #6c0a75); color: white; font-size: 30px; border: 2px solid black;">Tijeras ✂️</button> 
+    
+    <script>
+      let buttons = document.querySelectorAll('button');
+      buttons.forEach(button => {
+        button.addEventListener('mouseover', () => {
+          button.style.opacity = 0.8;
+          button.style.color = 'black';
+        });
+        button.addEventListener('mouseout', () => {
+          button.style.opacity = 1;
+          button.style.color = 'white';
+        });
+      });
+
+      <table id="tabla-resultados">
+    <thead>
+      <tr>
+        <th>Juego</th>
+        <th>Opción elegida</th>
+        <th>Opción de la computadora</th>
+        <th>Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+    </script
+
+</div>
+</body>
+</html>
+
+
