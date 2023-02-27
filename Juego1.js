@@ -6,7 +6,7 @@ let aciertosUsuario = 0;
 let aciertosComputadora = 0;
 
 // Ciclo "while" para validar que el usuario ingrese un número entero mayor a 0 para los intentos.
-while ((intentos) || intentos <= 0) {
+while (isNaN(intentos) || intentos <= 0) {
   alert("Error, ingrese un número entero mayor a 0.");
   intentos = parseInt(prompt('Ingrese el número de veces que quiere jugar:'));
 }
